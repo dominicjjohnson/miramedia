@@ -390,7 +390,8 @@ window.onclick = function(event) {
 	get_template_part('content/exhibitors/exhibitor', 'brands');
 
 	/** Press Releases */
-	get_template_part('content/exhibitors/exhibitor', 'press-releases');
+    // Should check to see if the press release system has been activated.
+	//get_template_part('content/exhibitors/exhibitor', 'press-releases');
 	
 	//echo '</div> <!-- TJ -->';
 
@@ -417,8 +418,9 @@ window.onclick = function(event) {
 		}
 	}
 			
+    // removed - need to check for plugin activation. 
 	if ( current_user_can( 'administrator' ) ) {
-		echo do_shortcode( '[seminarsbartag se_exhibitor="'. $post_name .'" se_layout="nospeakers"]' );
+		//echo do_shortcode( '[seminarsbartag se_exhibitor="'. $post_name .'" se_layout="nospeakers"]' );
 	}
 	
  ?>
